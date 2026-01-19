@@ -52,11 +52,13 @@ const Footer = () => {
               {/* UPDATED: Increased size from w-10 h-10 to w-16 h-16 */}
               <div className="relative w-16 h-16 overflow-hidden rounded-lg">
                  <Image 
-                    src="/assets/images/logo.png" 
-                    alt="Evolution CyberLabs Logo" 
-                    fill
-                    className="object-cover"
-                 />
+  // 👇 USE THIS EXACT FULL LINK
+  src="https://death-vader.github.io/evolution-cyberlabs/assets/images/logo.png"
+  alt="Evolution CyberLabs Logo" 
+  fill
+  className="object-cover"
+  priority
+/>
               </div>
               <span className="text-2xl font-heading font-bold text-foreground">
                 Evolution <span className="text-primary">CyberLabs</span>
