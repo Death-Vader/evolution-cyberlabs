@@ -51,9 +51,9 @@ const Footer = () => {
             <Link href="/homepage" className="flex items-center gap-4">
               {/* UPDATED: Increased size from w-10 h-10 to w-16 h-16 */}
               <div className="relative w-16 h-16 overflow-hidden rounded-lg">
-                 <Image 
-  // 👇 USE THIS EXACT FULL LINK
-  src="https://death-vader.github.io/evolution-cyberlabs/assets/images/logo.png"
+  <Image 
+  // 👇 This is the correct, permanent link for your hosted site
+  src="https://Death-Vader.github.io/evolution-cyberlabs/assets/images/logo.png"
   alt="Evolution CyberLabs Logo" 
   fill
   className="object-cover"
