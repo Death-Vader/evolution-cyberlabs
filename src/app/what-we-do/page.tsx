@@ -4,10 +4,12 @@ import Footer from '@/components/common/Footer';
 import ServiceHero from './components/ServiceHero';
 import WhatWeDoInteractive from './components/WhatWeDoInteractive';
 import ServiceComparison from './components/ServiceComparison';
-import ROICalculator from './components/ROICalculator';
-import InteractiveResources from './components/InteractiveResources';
+import AssessmentCTA from './components/AssessmentCTA'; // 👈 The new CTA Component
 import ServiceTestimonials from './components/ServiceTestimonials';
 import ServiceFAQ from './components/ServiceFAQ';
+
+// Note: I removed 'InteractiveResources' and 'ROICalculator' from imports 
+// because they are now accessed via the "Free Assessment" button.
 
 export const metadata: Metadata = {
   title: 'Our Services - Evolution CyberLabs',
@@ -19,12 +21,26 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <ServiceHero title="Security Services That Scale" description="From continuous monitoring to offensive security testing, we provide the full spectrum of cyber defense services." />
+        {/* 1. Hero Section */}
+        <ServiceHero 
+          title="Security Services That Scale" 
+          description="From continuous monitoring to offensive security testing, we provide the full spectrum of cyber defense services." 
+        />
+        
+        {/* 2. Main Services Cards */}
         <WhatWeDoInteractive />
+        
+        {/* 3. Service Comparison Table */}
         <ServiceComparison />
-        <ROICalculator />
-        <InteractiveResources />
+        
+        {/* 4. NEW: Free Assessment Call to Action 
+           (Replaces the inline InteractiveResources/ROICalculator) */}
+        <AssessmentCTA />
+        
+        {/* 5. Social Proof */}
         <ServiceTestimonials />
+        
+        {/* 6. Common Questions */}
         <ServiceFAQ />
       </main>
       <Footer />

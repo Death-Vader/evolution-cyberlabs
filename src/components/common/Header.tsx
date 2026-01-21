@@ -58,13 +58,15 @@ const Header = () => {
             {/* Logo Section */}
             <Link href="/homepage" className="flex items-center gap-3 group">
               <div className="relative w-14 h-14 overflow-hidden rounded-lg group-hover:scale-105 transition-transform duration-300">
-                <Image 
-  // 👇 This is the correct, permanent link for your hosted site
+               <Image 
+  // 👇 The Full Working Link
   src="https://Death-Vader.github.io/evolution-cyberlabs/assets/images/logo.png"
-  alt="Evolution CyberLabs Logo" 
+  // 👇 CHANGE THIS TEXT so we can track the update!
+  alt="Evolution Logo UPDATED" 
   fill
   className="object-cover"
   priority
+  unoptimized={true}
 />
               </div>
               <span className="text-xl md:text-2xl font-heading font-bold text-slate-900 tracking-tight">
